@@ -1,2 +1,2 @@
 # redis
-In-memory cache
+Simple in-memory noSQL database copy.
