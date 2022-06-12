@@ -48,6 +48,8 @@ namespace test.Redis
                 ttlSeconds--;
             }
             Cache.Remove(name);
+            
+            threadPool.Remove(Thread.CurrentThread);
         }
         public string Get(string name) // returns value if exist
         {
