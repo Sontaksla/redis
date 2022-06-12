@@ -18,7 +18,6 @@ namespace test.Redis
         private void AddCache(KeyValuePair<string, string> pair, uint ttlSeconds)
         {
             Cache[pair.Key] = pair.Value;
-            var tempObject = new { ttl = ttlSeconds, name = pair.Key };
             Thread thread = new Thread(ttlCache => 
             {
                 TtlCache cache = (TtlCache)ttlCache;
