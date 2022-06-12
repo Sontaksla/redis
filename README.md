@@ -1,2 +1,2 @@
 # redis
-Simple in-memory noSQL database copy.
+Simple in-memory noSQL database.
